@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import homeBG from './assets/home-bg.jpg';
-import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaMailBulk, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 function Home({ className }) {
     const el = useRef(null);
@@ -25,17 +25,17 @@ function Home({ className }) {
 
     return (
         <>
-            <section className="flex items-center justify-left min-h-screen p-6">
+            <section className="flex items-center justify-left min-h-screen p-6" id="home">
                 <div className={className}>
                     <img
                         src={homeBG}
                         alt="homeBG"
-                        className="absolute inset-0 w-full h-full object-cover z-0 opacity-30"
+                        className="absolute inset-0 w-full h-full object-cover z-0 opacity-40"
                     />
 
                     <div className="relative z-10 max-w-2xl animate-fadeIn">
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Shenesis Eumague</h1>
-                        <p className="text-xl font-semibold">
+                        <p className="text-xl font-semibold text-gray-800">
                             I'm a {" "}
                             <span
                                 ref={el}
@@ -46,18 +46,18 @@ function Home({ className }) {
                             </span>
                         </p>
 
-                        <div className="flex gap-5 mt-4 text-2xl text-gray-600">
-                            <a href="#" className="hover:text-blue-500 transition">
-                                <FaTwitter />
-                            </a>
-                            <a href="#" className="hover:text-blue-700 transition">
+                        <div className="flex gap-5 mt-4 text-2xl text-gray-700">
+                            <a href="#" className="hover:text-cyan-800 transition">
                                 <FaFacebook />
                             </a>
-                            <a href="#" className="hover:text-pink-500 transition">
+                            <a href="#" className="hover:text-cyan-800 transition">
                                 <FaInstagram />
                             </a>
-                            <a href="#" className="hover:text-blue-600 transition">
+                            <a href="#" className="hover:text-cyan-800 transition">
                                 <FaLinkedin />
+                            </a>
+                            <a href="#" className="hover:text-cyan-800 transition">
+                                <FaMailBulk />
                             </a>
                         </div>
                     </div>

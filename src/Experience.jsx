@@ -48,11 +48,11 @@ function Experience({ className }) {
   ];
     return (
         <>
-            <section className="items-center mt-10 bg-indigo-500 ">
+            <section className="items-center mt-10 bg-white" id="experience" data-aos="fade-up">
                 <div className={className}>
                     <h2 className="relative text-2xl md:text-3xl font-semibold text-gray-600 mb-4 text-center 
                         before:content-[''] before:absolute before:block before:w-40 before:h-px before:bg-gray-600/40 before:left-0 before:right-0 before:bottom-0 before:mx-auto before:mb-[-16px]
-                        after:content-[''] after:absolute after:block after:w-16 after:h-[3px] after:bg-blue-700/60 after:left-0 after:right-0 after:bottom-0 after:mx-auto after:mb-[-17px]
+                        after:content-[''] after:absolute after:block after:w-16 after:h-[3px] after:bg-cyan-600/60 after:left-0 after:right-0 after:bottom-0 after:mx-auto after:mb-[-17px]
                         ">
                         Experience
                     </h2>
@@ -65,15 +65,16 @@ function Experience({ className }) {
                     </div>
 
                     <div className="mx-auto h-full p-8 m-0">
-                        <ol className="relative border-s border-gray-200">
+                        <ol className="relative border-s border-cyan-700">
                             {timelineData.map((timeline, index) => (
                                 <li key={index} className="mb-10 ms-10">  
-                                    <LuCircleStop className="w-10 h-10 absolute flex items-center justify-center bg-indigo-500 -start-5 text-gray-100 p-0" />
-                                    <h3 className="flex items-center text-lg font-semibold text-white">{timeline.title}</h3>
-                                    <time className="block font-thin text-gray-300">{timeline.duration}</time>
-                                    <time className="block mb-2 font-thin text-gray-300">{timeline.company}</time>
+                                    <LuCircleStop className="w-10 h-10 absolute flex items-center justify-center bg-white -start-5 text-cyan-600 p-0" />
+                                    
+                                    <h3 className="flex items-center text-lg font-semibold">{timeline.title}</h3>
+                                    <time className="block font-thin text-gray-800">{timeline.duration}</time>
+                                    <time className="block mb-2 font-thin text-gray-800">{timeline.company}</time>
 
-                                    <ul className="list-disc list-inside text-gray-200">
+                                    <ul className="list-disc list-inside text-gray-800">
                                         {timeline.description?.map((desc, index1) => (
                                             <li key={index1}>{desc}</li>
                                         ))}
