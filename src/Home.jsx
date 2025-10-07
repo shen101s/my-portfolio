@@ -34,7 +34,7 @@ function Home({ className }) {
                     />
 
                     <div className="relative z-10 max-w-2xl animate-fadeIn">
-                        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Shenesis Eumague</h1>
+                        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Shen E.</h1>
                         <p className="text-xl font-semibold text-gray-800">
                             I'm a {" "}
                             <span

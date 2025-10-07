@@ -1,7 +1,7 @@
 import { FaMailBulk, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 function Footer({ className }) {
-    const name = 'Shenesis Eumague';
+    const name = 'Shen E.';
     const position = 'Full-stack Developer | Freelancer | Virtual Assistant';
 
     return (
